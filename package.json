@@ -6,15 +6,16 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client":"npm start --prefix client",
-    "clientinstall":"npm install --prefix client",
-    "dev":"concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "chokidar": "^3.5.2",
     "config": "^3.3.6",
     "express": "^4.17.1",
     "express-validator": "^6.12.0",
